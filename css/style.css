@@ -1,0 +1,231 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+html, body {
+    
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+}
+.background{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/tv-carpio.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color:#c6c6fa;
+    
+    position:relative;
+    overflow-y: auto;
+    
+    
+}
+.nav{
+    
+    width; 28px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.nav a{
+    
+    text-decoration: none;
+    font-size: 28px;
+    font-family: verdana;
+    font-weight: bold;
+    height:90px;
+    margin: 5px 0;
+    display: inline-block;
+    float: left;
+    background-color: black;
+    color: white;
+    line-height: 90px;
+    text-align: center;
+    transition: 300ms;
+}
+
+a.active, .nav a:hover{
+    background-color: white;
+    color: black;
+    width: 80%;
+    
+}
+.a{
+  width: 65% ; 
+}
+.b{
+  width: 55% ; 
+}
+.c{
+  width: 50% ; 
+}
+.d{
+  width: 60% ; 
+}
+
+.content{
+    position: absolute;
+    width:800px;
+    min-height: 500px;
+    height: auto;
+/*    background-color: aqua;*/
+    right: 15px;
+    top:15px;
+   
+    
+}
+.home{
+    
+    position:absolute;
+    right:0;
+    bottom:-50px;
+    color:darkblue;
+    font-family: verdana;        
+    text-transform: uppercase;
+}
+
+.home h1{
+    
+    font-size: 50px;
+    padding-right: 5px;
+    border-bottom: 5px solid chocolate;
+
+}
+.home h2{
+    
+    font-size: 28px;
+    padding: 5px 0;
+    opacity: 0.55;
+
+
+}
+.aboutme{
+    position:absolute;
+    right:0;
+    top: 10px;
+    color:darkblue;
+    font-family: century gothic;  
+    padding: 20px  ;
+    background-color: azure;
+    margin-left: 40%;
+    margin-top: 10%;
+    opacity: 0.5;
+    display: none;
+}
+
+.aboutme p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    }
+
+.gallery{
+    
+    position:absolute;
+    right:10px;
+    left: 300px;
+    top: 10px; 
+    background-color: black;
+    margin-left: 4px;
+    margin-top: 10%;
+    opacity: 0.5;
+    color:darkblue;
+    font-family: century gothic;  
+    padding: 10px  ;
+    display: none;
+}
+
+.gallery .image{
+    margin: 10px;
+    float: right;
+}
+
+.image img{
+    
+    width: 150px;
+    height: 100px;
+    padding: 10px  ;
+    border: 5px solid hotpink;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+.image img:hover{
+    
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    
+    
+}
+.contactme{
+    
+    
+    position:absolute;
+/*    right:40px;*/
+    left: 500px;
+    top: -100px; 
+    background-color: black;
+    margin-left: 4px;
+    margin-top: 10%;
+    opacity: 0.5;
+    font-family: century gothic;  
+    padding: 10px  ;
+    display: none;
+}
+
+.inputtext{
+    width: 500px;
+    height: 50px;
+    border: 3px solid hotpink;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+    margin-bottom: 20px;
+    
+}
+.inputmessage{
+    width: 500px;
+    height: 200px;
+    border: 3px solid hotpink;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+}
+.submitbutton{
+    
+    width: 120px;
+    height: 60px;
+    background-color: hotpink;
+    color: black;
+    font-size: 20px;
+    border: none;
+    font-family: arial;
+    font-weight: bold;
+    float: left;
+    clear: both;
+    margin-top: 20px;
+    
+}
+
+.submitbutton:hover{
+    
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    
+    
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+    </head>
+    <body>
+        <section class="background">
+           <div class="nav">
+            <a class="a active" href="#"> HOME </a>
+            <a class="b" href="#"> ABOUT ME </a>
+            <a class="c" href="#"> GALLERY </a>
+            <a class="d" href="#"> CONTACT ME</a>
+                                
+            </div>
+        
+        <article class="content">
+            <header class="home">
+            <h1> I am Yusman Betty  </h1>
+            <h3> A Cake Baker </h3>
+             </header>
+                    
+        </article>
+            
+        <article class="aboutme">
+            
+            <p> <b>Hello Guys, </b> <br/>
+                Welcome to my <b>portfolio page.</b><br/> I am an avid lover of cakes, baking, flour and all that can be made from flour. I run a home based business where i make cakes in various styles, design and flavours for different occassion ranging from birthdays, wedding ceremonies, school parties, anniversaries amongst others.</p>
+            <p> I enjoy being a aprt of happy gatherings and the thought that the works of my hands can make other persons happy.</p>
+            <p> Do check out samples of my work in the gallery section of this site. I hope I get to work with you someday and give you a taste of the awesomeness of my work.</p>
+            
+            <p> Cheers!</p>
+             
+        </article>
+            
+            
+        </section>
+        
+        <section class="gallery">
+            
+            <div class="image">
+             <img src="images/Birthday-Cake-Designs1.jpg">     
+            </div>
+        <div class="image">
+             <img src="images/19893_551615788184175_909307749_n.jpg">     
+            </div>
+        <div class="image">
+             <img src="images/Basket%20cake.jpg">     
+            </div>
+        <div class="image">
+             <img src="images/birthday-cake-idea-09.jpg">     
+            </div>
+        <div class="image">
+             <img src="images/Birthday-Cake-Pictures1.jpg">     
+            </div>
+        <div class="image">
+             <img src="images/birthday-cake-with-chocolate-fondant-icing-21241511.jpg">     
+            </div>
+        <div class="image">
+             <img src="images/birthday-cakes-simple-3.jpg">     
+            </div>
+        <div class="image">
+             <img src="images/birthday_cake440.jpg">     
+            </div>
+        <div class="image">
+             <img src="images/birthday_cake_springfield_mo_Ashleys_23rd_fs.jpg">     
+            </div>
+            <div class="image">
+             <img src="images/butterfly-birthday-cake.jpg">     
+            </div>
+        <div class="image">
+             <img src="images/CAKES241.JPG">     
+            </div>
+        <div class="image">
+             <img src="images/General_Male_Birthday_Cake.JPG">     
+            </div>
+            
+        </section>
+        
+        <section class="contactme">
+            <div class="contactform">
+                <form action="index.html" method="post">
+                    <input type="text" name="" class="inputtext" value="First Name">
+                    <input type="text" name="" class="inputtext" value="Last Name">
+                    <input type="text" name="" class="inputtext" value=" Your Email">
+                    <textarea cols="4" rows="6" class="inputmessage"> Your Message...!!! </textarea>
+                    <input type="button" name="" value="Submit" class="submitbutton"> 
+                
+                </form>
+            
+            </div>
+        
+        </section>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"> </script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+        $('a').click(function(){
+//        alert("You cliked me")
+        var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+        });
+            
+            var $a = $('.a'),
+                $b= $('.b'),
+                $c= $('.c'),
+                $d= $('.d'),
+                $home= $('.home'),
+                $aboutme= $('.aboutme');
+                $gallery= $('.gallery');
+                $contactme= $('.contactme');
+            
+            $a.click(function(){
+                $home.fadeIn();
+                $aboutme.fadeOut();
+                $gallery.fadeOut();
+                $contactme.fadeOut();
+                    
+             })
+            
+            
+             $b.click(function(){
+                $home.fadeOut();
+                $aboutme.fadeIn();
+                $gallery.fadeOut();
+                $contactme.fadeOut();
+                    
+             })
+            $c.click(function(){
+                $home.fadeOut();
+                $aboutme.fadeOut();
+                $gallery.fadeIn();
+                $contactme.fadeOut();
+                    
+             })
+            $d.click(function(){
+                $home.fadeOut();
+                $aboutme.fadeOut();
+                $gallery.fadeOut();
+                $contactme.fadeIn();
+                    
+             })
+    
+    });
+ </script>
+    
+    </body>
+
+
+
+
+
+
+
+</html>
